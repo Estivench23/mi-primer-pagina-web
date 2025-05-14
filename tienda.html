@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salsamentaria el Titi</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="logo/logo.webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body class="container-layout-store">
+    <header>
+      <nav>
+        <div class="logo" id="logo">
+          <img src="logo/logo.webp" alt="logo" />
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/tienda.html">Tienda</a></li>
+          <li><a href="/nuestras marcas.html">Nuestras Marcas</a></li>
+          <li><a href="/conocenos.html">Conócenos</a></li>
+          <li><a href="/login.html">Cuenta</a></li>
+        </ul>
+        <div id="tienda" class="seccion" style="display: none">
+          Contenido de Tienda
+        </div>
+        <div id="marcas" class="seccion" style="display: none">
+          Contenido de Marcas
+        </div>
+        <div id="conocenos" class="seccion" style="display: none">
+          Contenido de Conócenos
+        </div>
+        <div id="conocenos" class="seccion" style="display: none">
+          Contenido de cuenta
+        </div>
+        <div class="hamburguer" id="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div>
+        <h1>Bienvenido aqui podras conocer todos nuestros productos</h1>
+      </div>
+      <div class="lineas-titulo">
+        <hr />
+        <span>Lineas Comerciales</span>
+        <hr />
+      </div>
+    </section>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/+573107590848" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" onclick="showTab(0)">Lacteos</div>
+      <div class="tab" onclick="showTab(1)">Carnes frias</div>
+      <div class="tab" onclick="showTab(2)">Congelados</div>
+      <div class="tab" onclick="showTab(3)">Salsas</div>
+    </div>
+
+    <!-- Carrito -->
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+
+    <!-- Popup del carrito -->
+    <div id="cart-popup">
+      <div id="cart-details">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items"></ul>
+        <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+        <button onclick="closeCart()">Cerrar</button>
+      </div>
+    </div>
+
+    <!-- Productos - lacteos -->
+    <div class="products active">
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/queso taj x 400.PNG" alt="Producto 1" />
+        <div class="product-name">Queso Taj x 400g</div>
+        <div class="product-desc"></div>
+        <div class="product-price">$7.600</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img
+          src="imagenes productos/queso bloque taj x 2400g.PNG"
+          alt="Producto 2"
+        />
+        <div class="product-name">Queso Bloq Taj x 2400g</div>
+        <div class="product-desc"></div>
+        <div class="product-price">$44.500</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img
+          src="imagenes productos/queso bloque ent x 2400g.PNG"
+          alt="Producto 3"
+        />
+        <div class="product-name">Queso Bloq Ent x 2400g</div>
+        <div class="product-desc">calidad premium</div>
+        <div class="product-price">$44.500</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Productos - carnes frias -->
+    <div class="products">
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img
+          src="imagenes productos/chorizos brisas.PNG"
+          alt="Chorizo Brisas"
+        />
+        <div class="product-name">chorizo Brisas x 10 und</div>
+        <div class="product-desc">delicioso y fresco</div>
+        <div class="product-price">$23.000</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/chorizos nojos.PNG" alt="Chorizo Nojos" />
+        <div class="product-name">Chorizo Nojos x 10 und</div>
+        <div class="product-desc">delicioso y fresco</div>
+        <div class="product-price">$85.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/jamon lord.PNG" alt="jamon lord" />
+        <div class="product-name">Jamon Lord Fino</div>
+        <div class="product-desc">delicioso y fresco</div>
+        <div class="product-price">$85.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/jamon nojos.PNG" alt="jamon Nojos" />
+        <div class="product-name">Jamon Nojos</div>
+        <div class="product-desc">delicioso y fresco</div>
+        <div class="product-price">$85.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img
+          src="imagenes productos/salchicha porchi.PNG"
+          alt="salchicha porchi"
+        />
+        <div class="product-name"><p>Salchicha Porchi X 18 und</p></div>
+        <div class="product-desc">delicioso y fresco</div>
+        <div class="product-price">$85.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img
+          src="imagenes productos/salchicha berna.PNG"
+          alt="salchicha Berna"
+        />
+        <div class="product-name"><p>Salchicha Berna X 16 und</p></div>
+        <div class="product-desc">delicioso y fresco</div>
+        <div class="product-price">$85.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- Productos - Congelados -->
+    <div class="products">
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/nuggets de pollo.PNG" alt="Nugetst" />
+        <div class="product-name">Nuggets de Pollo</div>
+        <div class="product-desc">opciones únicas</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/pinchos de pollo.PNG" alt="Pinchos" />
+        <div class="product-name">Pinchos de pollo</div>
+        <div class="product-desc">opciones únicas</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/hamb de pollo.PNG" alt="Hamb de Pollo" />
+        <div class="product-name">Hamb de Pollo</div>
+        <div class="product-desc">opciones únicas</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/cazuela de mariscos.PNG" alt="Cazuela" />
+        <div class="product-name">Cazuela de Mariscos x 500g</div>
+        <div class="product-desc">opciones únicas</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/mixtura de mariscos.PNG" alt="Mixtura" />
+        <div class="product-name">Mixtura de Mariscos x kg</div>
+        <div class="product-desc">opciones únicas</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/camaron.PNG" alt="Camarones" />
+        <div class="product-name">Camaron x 500g</div>
+        <div class="product-desc">opciones únicas</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <!-- productos salsa -->
+    <div class="products">
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/tomate differ.PNG" alt="tomate differ" />
+        <div class="product-name">tomate Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/mayonesa differ.PNG" alt="Mayonesa" />
+        <div class="product-name">Mayonesa Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/rosada differ.PNG" alt="Rosada" />
+        <div class="product-name">Rosada Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/bbq differ.PNG" alt="BBQ" />
+        <div class="product-name">BBQ Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/tartara differ.PNG" alt="Tartara" />
+        <div class="product-name">Tartara Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/piña differ.PNG" alt="Piña" />
+        <div class="product-name">Piña Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+      <div class="product-card">
+        <div class="new-label"></div>
+        <img src="imagenes productos/vinagre differ.PNG" alt="Vinagre" />
+        <div class="product-name">Tartara Differ BG</div>
+        <div class="product-desc">Mejor Calidad</div>
+        <div class="product-price">$90.00</div>
+        <button onclick="addToCart(event)">Agregar al carrito</button>
+      </div>
+    </div>
+
+    <footer class="bg-gray-900 text-white p-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Información de contacto -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contacto</h3>
+          <p>Teléfono: 3107590848</p>
+          <p>Email: sergiocastro20191@gmail.com</p>
+          <p>
+            Dirección: Calle 25b sur #29-04 San Jorge, Neiva-Huila, Colombia
+          </p>
+          <br />
+        </div>
+        <!-- Mapa de ubicación -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Ubicación</h3>
+          <div class="w-full h-48">
+            <iframe
+              class="iframe-google-maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6931885121203!2d-75.27426322579186!3d2.904424497072012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b73ecaa6b5b67%3A0x2ec591d9b37db35b!2sCl.%2025%20Bis%20%2329-150%2C%20Neiva%2C%20Huila!5e0!3m2!1ses-419!2sco!4v1747236296253!5m2!1ses-419!2sco"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Redes sociales -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/share/1APigGL1E5/?mibextid=wwXlfr"
+                class="hover:underline"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+          <br />
+        </div>
+      </div>
+      <div class="mt-8 text-center text-sm text-gray-400">
+        | © 2025 TuSitio | Todos los derechos reservados | hecho por estudiante
+        de la FET |
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

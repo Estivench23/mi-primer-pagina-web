@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salsamentaria el Titi</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="logo/logo.webp">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <style>
+    .slick-prev:before, .slick-next:before {
+      color: #211e1e;
+    }
+
+    @media (min-width: 768px) {
+      .slick-prev:before, .slick-next:before {
+        font-size: 80px;
+      }
+
+      .slick-prev {
+        left: -90px;
+      }
+  
+      .slick-next {
+        right: -30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo" id="logo">
+        <img src="logo/logo.webp" alt="logo">
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="/tienda.html">Tienda</a></li>
+        <li><a href="/nuestras marcas.html">Nuestras Marcas</a></li>
+        <li><a href="/conocenos.html">Conócenos</a></li>
+        <li><a href="/login.html">Cuenta</a></li>
+      </ul>
+      <div id="tienda" class="seccion" style="display:none;">Contenido de Tienda</div>
+      <div id="marcas" class="seccion" style="display:none;">Contenido de Marcas</div>
+      <div id="conocenos" class="seccion" style="display:none;">Contenido de Conócenos</div>
+      <div id="conocenos" class="seccion" style="display:none;">Contenido de Cuenta</div>
+
+      <div class="hamburguer" id="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-slider">
+    <div class="container-slider">
+      <div class="slider">
+        <img class="slide" src="Imagenes/papas mccain.jpg" alt="">
+        <img class="slide slide-hidden" src="Imagenes/chuleta.jpg" alt="">
+        <img class="slide slide-hidden" src="Imagenes/costillas armar.jpg" alt="">
+      </div>
+      <div class="controls">
+        <div class="control-slide control-slide-active"></div>
+        <div class="control-slide"></div>
+        <div class="control-slide"></div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://wa.me/+573107590848" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+
+  <section class="recetas">
+    <h2>Recetas destacadas</h2>
+
+    <div class="carrusel" id="carrusel">
+      <div>
+        <div class="tarjeta-receta">
+          <img src="Recetas/cazuela.webp" alt="Poke de Tilapia">
+          <div class="info-receta">
+            <h3>Cazuela de Mariscos</h3>
+            <p><strong>Preparación:</strong> 30 minutos</p>
+            <p><strong>Dificultad:</strong> Media</p><br>
+            <p>PASO 1:<br>
+              Pelear todos los ingredientes en mención picar en trozos, <br> el ajo y la rama de apio enteros
+              freír en aceite de oliva, <br> adicionar las especias sal una vez agrega el caldo deja <br> que hierva
+              unos 5 minutos échale los mariscos ya lavados <br>deja otros 5 minutos y apaga el fuego. <br>
+              PASO 2:<br>
+              Saca la rama de apio antes de servir y los ajos los si están <br> enteros los maceras en la misma <br>
+              olla. Para darle ese sabor peculiar del marisco <br>
+              PASO 3:<br>
+              Las papas las cocinas en cuadritos grandes con sal y orégano y romero. <br>
+              Una vez cocidas incorporar a la cazuela sirve de inmediato.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tarjeta-receta">
+          <img src="Recetas/lomo en salsa bbq.webp" alt="Lomo">
+          <div class="info-receta">
+            <h3>Lomo de Cerdo BBQ</h3>
+            <p><strong>Preparación:</strong> 25 minutos</p>
+            <p><strong>Dificultad:</strong> Media</p> <br>
+            <p>PASO 1: <br>
+              Mezcla el azúcar moreno, ajo en polvo, cebolla en polvo, sal, pimienta, <br>
+              paprika y pimienta cayena. <br>
+              PASO 2: <br>
+              Frota la combinación de especias en el lomo de cerdo para que se <br>
+              impregne, agrega la mitad de Aderezos, agrega las ramas de romero, <br>
+              hornea a 200oC por 20 minutos, retira del horno y agrega la otra mitad <br>
+              de salsa BBQ habanero. <br>
+              PASO 3: <br>
+              Hornea a 180oC por 35 minutos. <br> <br>
+              PASO 4: <br>
+              Disfruta y comparte con tus invitados el delicioso lomo de cerdo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tarjeta-receta">
+          <img src="Recetas/cerezas-para-cocteles.jpg" alt="cerezas-para-cocteles">
+          <div class="info-receta">
+            <h3>Cerezadas Almibar</h3>
+            <p><strong>Preparación:</strong> 20 minutos</p>
+            <p><strong>Dificultad:</strong> baja</p>
+            <p>PASO 1: <br>
+              Lavamos y deshuesamos las cerezas frescas, luego las colocamos <br>
+              en frascos esterilizados de vidrio con cierre hermético. <br>
+              PASO 2: <br>
+              En una cacerola, mezcla el azúcar, el agua, la rama de <br>
+              canela y un chorrito de jugo de limón.También se pueden <br>
+              agregar unas gotas de esencia de vainilla para realzar el sabor. <br>
+              Dejamos cocer la mezcla hasta llegar a ebullición removiendo <br>
+              continuamente hasta que el azúcar se disuelva por completo. <br>
+              Después, vertemos el almíbar caliente sobre las cerezas <br>
+              en los frascos y nos aseguramos de cubrirlas por completo. <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tarjeta-receta">
+          <img src="Recetas/cazuela.webp" alt="Poke de Tilapia">
+          <div class="info-receta">
+            <h3>Cazuela de Mariscos</h3>
+            <p><strong>Preparación:</strong> 30 minutos</p>
+            <p><strong>Dificultad:</strong> Media</p><br>
+            <p>PASO 1:<br>
+              Pelear todos los ingredientes en mención picar en trozos, <br> el ajo y la rama de apio enteros
+              freír en aceite de oliva, <br> adicionar las especias sal una vez agrega el caldo deja <br> que hierva
+              unos 5 minutos échale los mariscos ya lavados <br>deja otros 5 minutos y apaga el fuego. <br>
+              PASO 2:<br>
+              Saca la rama de apio antes de servir y los ajos los si están <br> enteros los maceras en la misma <br>
+              olla. Para darle ese sabor peculiar del marisco <br>
+              PASO 3:<br>
+              Las papas las cocinas en cuadritos grandes con sal y orégano y romero. <br>
+              Una vez cocidas incorporar a la cazuela sirve de inmediato.
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tarjeta-receta">
+          <img src="Recetas/lomo en salsa bbq.webp" alt="Lomo">
+          <div class="info-receta">
+            <h3>Lomo de Cerdo BBQ</h3>
+            <p><strong>Preparación:</strong> 25 minutos</p>
+            <p><strong>Dificultad:</strong> Media</p> <br>
+            <p>PASO 1: <br>
+              Mezcla el azúcar moreno, ajo en polvo, cebolla en polvo, sal, pimienta, <br>
+              paprika y pimienta cayena. <br>
+              PASO 2: <br>
+              Frota la combinación de especias en el lomo de cerdo para que se <br>
+              impregne, agrega la mitad de Aderezos, agrega las ramas de romero, <br>
+              hornea a 200oC por 20 minutos, retira del horno y agrega la otra mitad <br>
+              de salsa BBQ habanero. <br>
+              PASO 3: <br>
+              Hornea a 180oC por 35 minutos. <br> <br>
+              PASO 4: <br>
+              Disfruta y comparte con tus invitados el delicioso lomo de cerdo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tarjeta-receta">
+          <img src="Recetas/cerezas-para-cocteles.jpg" alt="cerezas-para-cocteles">
+          <div class="info-receta">
+            <h3>Cerezadas Almibar</h3>
+            <p><strong>Preparación:</strong> 20 minutos</p>
+            <p><strong>Dificultad:</strong> baja</p>
+            <p>PASO 1: <br>
+              Lavamos y deshuesamos las cerezas frescas, luego las colocamos <br>
+              en frascos esterilizados de vidrio con cierre hermético. <br>
+              PASO 2: <br>
+              En una cacerola, mezcla el azúcar, el agua, la rama de <br>
+              canela y un chorrito de jugo de limón.También se pueden <br>
+              agregar unas gotas de esencia de vainilla para realzar el sabor. <br>
+              Dejamos cocer la mezcla hasta llegar a ebullición removiendo <br>
+              continuamente hasta que el azúcar se disuelva por completo. <br>
+              Después, vertemos el almíbar caliente sobre las cerezas <br>
+              en los frascos y nos aseguramos de cubrirlas por completo. <br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white p-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Información de contacto -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Contacto</h3>
+        <p>Teléfono: 3107590848</p>
+        <p>Email: sergiocastro20191@gmail.com</p>
+        <p>Dirección: Calle 25b sur #29-04 San Jorge, Neiva-Huila, Colombia</p> <br>
+      </div>
+      <!-- Mapa de ubicación -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Ubicación</h3>
+        <div class="w-full h-48">
+          <iframe class="iframe-google-maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6931885121203!2d-75.27426322579186!3d2.904424497072012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b73ecaa6b5b67%3A0x2ec591d9b37db35b!2sCl.%2025%20Bis%20%2329-150%2C%20Neiva%2C%20Huila!5e0!3m2!1ses-419!2sco!4v1747236296253!5m2!1ses-419!2sco"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!-- Redes sociales -->
+      <div>
+        <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/share/1APigGL1E5/?mibextid=wwXlfr" class="hover:underline">Facebook</a>
+          </li>
+        </ul> <br>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-sm text-gray-400">
+      | © 2025 TuSitio | Todos los derechos reservados | hecho por estudiante de la FET |
+    </div>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

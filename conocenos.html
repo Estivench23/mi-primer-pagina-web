@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salsamentaria el Titi</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" href="logo/logo.webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo" id="logo">
+          <img src="logo/logo.webp" alt="logo" />
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/tienda.html">Tienda</a></li>
+          <li><a href="/nuestras marcas.html">Nuestras Marcas</a></li>
+          <li><a href="/conocenos.html">Conócenos</a></li>
+          <li><a href="/login.html">Cuenta</a></li>
+        </ul>
+        <div id="tienda" class="seccion" style="display: none">
+          Contenido de Tienda
+        </div>
+        <div id="marcas" class="seccion" style="display: none">
+          Contenido de Marcas
+        </div>
+        <div id="conocenos" class="seccion" style="display: none">
+          Contenido de Conócenos
+        </div>
+        <div id="conocenos" class="seccion" style="display: none">
+          Contenido de Cuenta
+        </div>
+        <div class="hamburguer" id="hamburguer">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/+573107590848" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <section class="contenedor-mision-vision">
+      <div class="ventana mv-left">
+        <h1>Mision</h1>
+        <p>
+          nuestra mision es brindar soluciones logisticas eficientes<br />
+          y confiables para la distribucion de alimentos, asegurando que cada
+          producto llegue a su destino en optimas condiciones de frescura y
+          calidad. Nos comprometemos a satisfacer las necesidades de nuestros
+          clientes desde pequeños comercios hasta grandes cadenas mediante un
+          servicio puntual, personalizado y respaldado por un equipo humano
+          capacitado y comprometido. Además, trabajamos bajo estrictos
+          estándares de seguridad alimentaria, promoviendo una cadena de
+          suministro sostenible, responsable y orientada al bienestar de la
+          sociedad.
+        </p>
+      </div>
+
+      <div class="ventana mv-right">
+        <h1>Vision</h1>
+        <p>
+          Nuestra visión es consolidarnos como la empresa líder en distribución
+          de alimentos a nivel nacional e internacional, reconocida por su
+          innovación tecnológica, excelencia operativa y compromiso social.
+          Aspiramos a transformar la industria de distribución mediante procesos
+          inteligentes, sostenibles y adaptables a los cambios del mercado,
+          fortaleciendo alianzas estratégicas con proveedores y clientes, y
+          contribuyendo activamente al desarrollo económico y alimentario de las
+          comunidades en las que operamos.
+        </p>
+      </div>
+
+      <div>
+        <img
+          src="Imagenes/camion refrigeracion.jfif"
+          alt="Imagen Visión"
+          class="imagen-inferior"
+        />
+      </div>
+
+      <div>
+        <img
+          src="Imagenes/produccion queso.jpg"
+          alt="Imagen Visión"
+          class="imagen-inferior"
+        />
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white p-8">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Información de contacto -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contacto</h3>
+          <p>Teléfono: 3107590848</p>
+          <p>Email: sergiocastro20191@gmail.com</p>
+          <p>
+            Dirección: Calle 25b sur #29-04 San Jorge, Neiva-Huila, Colombia
+          </p>
+          <br />
+        </div>
+        <!-- Mapa de ubicación -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Ubicación</h3>
+          <div class="w-full h-48">
+            <iframe
+              class="iframe-google-maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.6931885121203!2d-75.27426322579186!3d2.904424497072012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b73ecaa6b5b67%3A0x2ec591d9b37db35b!2sCl.%2025%20Bis%20%2329-150%2C%20Neiva%2C%20Huila!5e0!3m2!1ses-419!2sco!4v1747236296253!5m2!1ses-419!2sco"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <!-- Redes sociales -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/share/1APigGL1E5/?mibextid=wwXlfr"
+                class="hover:underline"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+          <br />
+        </div>
+      </div>
+      <div class="mt-8 text-center text-sm text-gray-400">
+        | © 2025 TuSitio | Todos los derechos reservados | hecho por estudiante
+        de la FET |
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
