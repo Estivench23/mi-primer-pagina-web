@@ -42,7 +42,7 @@ hamburguesa.addEventListener('click', () => {
 })
 
 document.addEventListener('DOMContentLoaded', () => {
-    if (['/', 'index.html'].includes(window.location.pathname)) {
+    if (['/', '/index.html'].includes(window.location.pathname)) {
       startAutoSlide();
     }
 
@@ -76,7 +76,7 @@ function closeCart() {
   document.getElementById('cart-popup').style.display = 'none';
 }
 
-if (['/', 'index.html'].includes(window.location.pathname)) {
+if (['/', '/index.html'].includes(window.location.pathname)) {
   $(document).ready(function(){
     $('#carrusel').slick({
       infinite: true,
